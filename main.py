@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv("TOKEN")
-
+print(f"Token: {TOKEN}")
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
