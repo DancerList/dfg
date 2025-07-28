@@ -29,7 +29,11 @@ def main_card_keyboard_vericitify():
     kb_builder.adjust(1)
     return kb_builder.as_markup()
 
-TOKEN="8484109115:AAH6GPbzUSrz7gp8RHQ_YAKoB2ikbhoqpdM"
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
